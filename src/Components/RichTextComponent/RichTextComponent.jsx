@@ -9,7 +9,7 @@ export class RichTextComponent extends React.Component {
           <span className="col">{this.props.title}</span>
         </header>
         <div className="row">
-          <p className="col">{this.props.text}</p>
+          <p className="col">{require('html-react-parser')(this.props.text)}</p>
         </div>
       </article>
     );
