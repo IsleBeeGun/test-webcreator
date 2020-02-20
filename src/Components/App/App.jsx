@@ -12,7 +12,12 @@ export class App extends React.Component {
         <div className="container">
           <GalleryComponent />
           <GridComponent components={this.props.page.components[1].metadata.components}/>
-          <FormComponent />
+          <FormComponent
+            title={this.props.page.form.title}
+            fields={this.props.page.form.fields}
+            field_groups={this.props.page.form.field_groups}
+            submit_button={this.props.page.form.submit_button}
+          />
         </div>
         <footer className="container bg-dark text-white">footer</footer>
       </div>

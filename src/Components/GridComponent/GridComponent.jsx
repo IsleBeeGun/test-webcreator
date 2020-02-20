@@ -11,6 +11,7 @@ export class GridComponent extends React.Component {
             <RichTextComponent
               col={component.col}
               title={component.metadata.title}
+              key={component.metadata.title}
               text={component.metadata.text}
             />
           );
