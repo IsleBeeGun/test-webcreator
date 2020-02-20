@@ -6,8 +6,15 @@ export class GridComponent extends React.Component {
   render() {
     return (
       <section className="row bg-light">
-        <RichTextComponent />
-        <RichTextComponent />
+        {this.props.components.map(component => {
+          return (
+            <RichTextComponent
+              col={component.col}
+              title={component.metadata.title}
+              text={component.metadata.text}
+            />
+          );
+        })}
       </section>
     );
   }

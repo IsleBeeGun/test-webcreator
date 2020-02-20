@@ -11,7 +11,7 @@ export class App extends React.Component {
         <header className="container bg-dark text-white">header</header>
         <div className="container">
           <GalleryComponent />
-          <GridComponent />
+          <GridComponent components={this.props.page.components[1].metadata.components}/>
           <FormComponent />
         </div>
         <footer className="container bg-dark text-white">footer</footer>
