@@ -4,8 +4,9 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import {App} from './Components/App/App.jsx';
 import * as serviceWorker from './serviceWorker';
+const page = require("./page.json");
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App page={page}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
