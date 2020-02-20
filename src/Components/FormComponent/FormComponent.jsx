@@ -3,6 +3,10 @@ import "./FormComponent.css";
 
 export class FormComponent extends React.Component {
   render() {
-    return <div></div>;
+    return (
+      <form className="row bg-secondary text-light">
+        <div className="col">awesome form here</div>
+      </form>
+    )
   }
 }

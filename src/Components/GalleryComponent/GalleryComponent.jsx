@@ -3,6 +3,10 @@ import "./GalleryComponent.css";
 
 export class GalleryComponent extends React.Component {
   render() {
-    return <div></div>;
+    return (
+      <section className="row bg-secondary text-light">
+        <div className="col">some pictures here</div>
+      </section>
+    );
   }
 }

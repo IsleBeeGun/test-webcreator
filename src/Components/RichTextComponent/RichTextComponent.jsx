@@ -3,6 +3,6 @@ import "./RichTextComponent.css";
 
 export class RichTextComponent extends React.Component {
   render() {
-    return <div></div>;
+    return <div className="col-md-6">Some text here</div>;
   }
 }
