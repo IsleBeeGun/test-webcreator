@@ -41,7 +41,7 @@ export class FormComponent extends React.Component {
             </div>
             {/* Here comes the additional group of inputs in column (right now only single entry in page.json) */}
             <div className={this.props.field_groups.additional}>
-              <div className="row h-75">
+              <div className="row">
                 {additinal.map((field, index) => {
                   return (
                     <div
@@ -56,7 +56,7 @@ export class FormComponent extends React.Component {
                         id={index + "-" + field.name}
                         name={field.name}
                         required={field.required}
-                        className="form-control w-100 h-75"
+                        className="form-control"
                       />
                     </div>
                   );
