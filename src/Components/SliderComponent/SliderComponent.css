@@ -1,0 +1,16 @@
+.slick-prev:before {
+  color: #c9c9c9;
+}
+.slick-prev:hover::before {
+  background: linear-gradient(91.82deg, #93E08C -1.93%, #78CEBF 97.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.slick-next:before {
+  color: #c9c9c9;
+}
+.slick-next:hover::before {
+    background: linear-gradient(91.82deg, #93E08C -1.93%, #78CEBF 97.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

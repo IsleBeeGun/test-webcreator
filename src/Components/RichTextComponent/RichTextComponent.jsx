@@ -6,7 +6,7 @@ export class RichTextComponent extends React.Component {
     return (
       <article className={"col-" + this.props.col}>
         <header className="row">
-          <span className="col">{this.props.title}</span>
+          <span className="col rtc-header">{this.props.title}</span>
         </header>
         <div className="row">
           {/* Parse html from page.json like this: require('html-react-parser')(stringToParse) */}

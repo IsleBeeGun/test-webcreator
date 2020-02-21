@@ -1,19 +1,25 @@
 import React from "react";
 import "./App.css";
-import {GalleryComponent} from "../GalleryComponent/GalleryComponent";
-import {GridComponent} from "../GridComponent/GridComponent";
-import {FormComponent} from "../FormComponent/FormComponent";
+import { GalleryComponent } from "../GalleryComponent/GalleryComponent";
+import { GridComponent } from "../GridComponent/GridComponent";
+import { FormComponent } from "../FormComponent/FormComponent";
 
 export class App extends React.Component {
   render() {
     return (
       <div>
-        <header className="container-fluid main_header">header</header>
+        <header className="container-fluid main_header">
+          <div className="container">
+            <div className="row">
+              <span className="col-auto">Тестовое задание</span>
+            </div>
+          </div>
+        </header>
         <div className="container">
-          <GalleryComponent 
-            metadata={this.props.page.components[0].metadata}
+          <GalleryComponent metadata={this.props.page.components[0].metadata} />
+          <GridComponent
+            components={this.props.page.components[1].metadata.components}
           />
-          <GridComponent components={this.props.page.components[1].metadata.components}/>
           <FormComponent
             title={this.props.page.form.title}
             fields={this.props.page.form.fields}
@@ -23,6 +29,6 @@ export class App extends React.Component {
         </div>
         <footer className="container-fluid main_footer"></footer>
       </div>
-    )
+    );
   }
 }

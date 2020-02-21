@@ -9,10 +9,10 @@ export class FormComponent extends React.Component {
     );
     const gdpr = this.props.fields.filter(field => field.name === "agreement");
     return (
-      <form className="row bg-secondary text-light">
+      <form className="row">
         <div className="col">
           <div className="row">
-            <span className="col">{this.props.title}</span>
+            <span className="col formcomponent-header">{this.props.title}</span>
           </div>
           <div className="row">
             {/* Here comes the main group of inputs, it's nested in a column */}
@@ -22,7 +22,7 @@ export class FormComponent extends React.Component {
                   if (field.type==="date") {
                     return (
                       <div
-                        className="form-group col-md-6"
+                        className="form-group col-md-6 input_group"
                         key={index + "-" + field.name}
                       >
                         <label htmlFor={index + "-" + field.name}>
@@ -33,13 +33,13 @@ export class FormComponent extends React.Component {
                           id={index + "-" + field.name}
                           name={field.name}
                           required={field.required}
-                          className="form-control"
+                          className="form-control input_field"
                         />
                       </div>
                     );
                   } else return (
                     <div
-                      className="form-group col-md-6"
+                      className="form-group col-md-6 input_group"
                       key={index + "-" + field.name}
                     >
                       <label htmlFor={index + "-" + field.name}>
@@ -50,7 +50,7 @@ export class FormComponent extends React.Component {
                         id={index + "-" + field.name}
                         name={field.name}
                         required={field.required}
-                        className="form-control"
+                        className="form-control input_field"
                       />
                     </div>
                   );
@@ -74,7 +74,7 @@ export class FormComponent extends React.Component {
                         id={index + "-" + field.name + "-textarea"}
                         name={field.name}
                         required={field.required}
-                        className="form-control"
+                        className="form-control input_field_additional"
                       />
                     </div>
                   );
@@ -93,11 +93,11 @@ export class FormComponent extends React.Component {
                       name={field.name}
                       id={index + "-" + field.name}
                       required={true}
-                      className="custom-control-input"
+                      className="custom-control-input gdpr_checkbox"
                     />
                     <label
                       htmlFor={index + "-" + field.name}
-                      className="custom-control-label"
+                      className="custom-control-label gdpr_label"
                     >
                       {require("html-react-parser")(field.label)}
                     </label>
@@ -108,9 +108,11 @@ export class FormComponent extends React.Component {
           })}
 
           <div className="row">
-            <button type="submit" className="col-auto btn btn-success btn-lg">
+            <div className="col">
+            <button type="submit" className="btn submit_button">
               {this.props.submit_button.text}
             </button>
+            </div>
           </div>
         </div>
       </form>

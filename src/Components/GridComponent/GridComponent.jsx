@@ -5,7 +5,7 @@ import { RichTextComponent } from "../RichTextComponent/RichTextComponent";
 export class GridComponent extends React.Component {
   render() {
     return (
-      <section className="row bg-light">
+      <section className="row gc">
         {this.props.components.map(component => {
           return (
             <RichTextComponent
