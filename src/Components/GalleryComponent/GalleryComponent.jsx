@@ -8,9 +8,12 @@ export class GalleryComponent extends React.Component {
       <section className="row bg-secondary text-light">
         <div className="col">
           <div className="row">
-            <div className="col">Name here</div>
+            <div className="col">{this.props.metadata.title}</div>
           </div>
-          <SliderComponent />
+          <SliderComponent
+            images={this.props.metadata.images}
+            slidesPerView={this.props.metadata.slidesPerView}
+          />
           <div className="row">
             <div className="col">blank here?</div>
           </div>

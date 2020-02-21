@@ -8,9 +8,11 @@ export class App extends React.Component {
   render() {
     return (
       <div>
-        <header className="container bg-dark text-white">header</header>
+        <header className="container-fluid main_header">header</header>
         <div className="container">
-          <GalleryComponent />
+          <GalleryComponent 
+            metadata={this.props.page.components[0].metadata}
+          />
           <GridComponent components={this.props.page.components[1].metadata.components}/>
           <FormComponent
             title={this.props.page.form.title}
@@ -19,7 +21,7 @@ export class App extends React.Component {
             submit_button={this.props.page.form.submit_button}
           />
         </div>
-        <footer className="container bg-dark text-white">footer</footer>
+        <footer className="container-fluid main_footer"></footer>
       </div>
     )
   }

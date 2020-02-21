@@ -19,7 +19,25 @@ export class FormComponent extends React.Component {
             <div className={this.props.field_groups.main}>
               <div className="row">
                 {main.map((field, index) => {
-                  return (
+                  if (field.type==="date") {
+                    return (
+                      <div
+                        className="form-group col-md-6"
+                        key={index + "-" + field.name}
+                      >
+                        <label htmlFor={index + "-" + field.name}>
+                          {field.label}
+                        </label>
+                        <input
+                          type={field.type}
+                          id={index + "-" + field.name}
+                          name={field.name}
+                          required={field.required}
+                          className="form-control"
+                        />
+                      </div>
+                    );
+                  } else return (
                     <div
                       className="form-group col-md-6"
                       key={index + "-" + field.name}
@@ -46,14 +64,14 @@ export class FormComponent extends React.Component {
                   return (
                     <div
                       className="form-group col"
-                      key={index + "-" + field.name}
+                      key={index + "-" + field.name + "-textarea"}
                     >
-                      <label htmlFor={index + "-" + field.name}>
+                      <label htmlFor={index + "-" + field.name + "-textarea"}>
                         {field.label}
                       </label>
                       <input
                         type={field.type}
-                        id={index + "-" + field.name}
+                        id={index + "-" + field.name + "-textarea"}
                         name={field.name}
                         required={field.required}
                         className="form-control"

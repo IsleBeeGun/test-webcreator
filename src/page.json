@@ -5,14 +5,14 @@
             "metadata": {
                 "title": "Галерея",
                 "images": [
-                    "url/to/img1.jpg",
-                    "url/to/img2.jpg",
-                    "url/to/img3.jpg",
-                    "url/to/img4.jpg",
-                    "url/to/img5.jpg",
-                    "url/to/img6.jpg",
-                    "url/to/img7.jpg",
-                    "url/to/img8.jpg"
+                    "/img/img1.png",
+                    "/img/img2.png",
+                    "/img/img3.png",
+                    "/img/img4.png",
+                    "/img/img5.png",
+                    "/img/img6.png",
+                    "/img/img7.png",
+                    "/img/img8.png"
                 ],
                 "slidesPerView": 3
             }
