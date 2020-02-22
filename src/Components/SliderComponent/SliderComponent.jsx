@@ -4,16 +4,13 @@ import Slider from "react-slick";
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
-  return <div className={className} style={{ ...style }} onClick={onClick} />;
+  return (
+    <button className={className + " arrow-alt-circle-right"} style={{ ...style, backgroundColor: "black", content: "h" }} onClick={onClick} />
+  )
 }
-
 function PrevArrow(props) {
   const { className, style, onClick } = props;
-  return (
-    <div className="container">
-      <div className={className + " row"} style={{ ...style, zindex: "5" }} onClick={onClick} />
-    </div>
-  )
+  return <button className={className} style={{ ...style, backgroundColor: "black"  }} onClick={onClick} />;
 }
 export class SliderComponent extends React.Component {
   render() {

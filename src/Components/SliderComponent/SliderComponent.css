@@ -1,11 +1,11 @@
-.slick-prev {
+/* .slick-prev {
   width: auto;
   height: auto;
   content: url("/ui-elements/arrow-back.png");
-}
-.slick-prev:hover {
+} */
+/* .slick-prev:hover {
   background-color: red;
-}
+} */
 /* .slick-prev:before {
   color: #c9c9c9;
   content: url("/ui-elements/arrow-back.png");
@@ -15,18 +15,19 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
-.slick-next {
+/* .slick-next {
   width: auto;
   height: auto;
   content: url("/ui-elements/arrow-next.png");
-}
-.slick-next:hover {
-  background-color: green;
-}
-/* .slick-next:before {
-  color: #c9c9c9;
-  content: url("/ui-elements/arrow-next.png");
 } */
+/* .slick-next:hover {
+  background-color: green;
+} */
+.slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+}
 /* .slick-next:hover::before {
   background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
   -webkit-background-clip: text;
