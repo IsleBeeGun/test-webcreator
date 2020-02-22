@@ -4,38 +4,16 @@ import Slider from "react-slick";
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "relative",
-        background: "transparent",
-        top: "260px",
-        right: "15px",
-        zIndex: "5"
-      }}
-      onClick={onClick}
-    />
-  );
+  return <div className={className} style={{ ...style }} onClick={onClick} />;
 }
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "transparent",
-        top: "260px",
-        left: "15px",
-        zIndex: "5"
-      }}
-      onClick={onClick}
-    />
-  );
+    <div className="container">
+      <div className={className + " row"} style={{ ...style, zindex: "5" }} onClick={onClick} />
+    </div>
+  )
 }
 export class SliderComponent extends React.Component {
   render() {
@@ -75,13 +53,22 @@ export class SliderComponent extends React.Component {
       ]
     };
     return (
-      <Slider {...settings} className="row">
-        {this.props.images.map((img_url, counter) => {
-          return (
-            <img alt="" src={img_url} key={"img-" + counter} className="col" />
-          );
-        })}
-      </Slider>
+      <div className="row">
+        <div className="col">
+          <Slider {...settings} className="row">
+            {this.props.images.map((img_url, counter) => {
+              return (
+                <img
+                  alt=""
+                  src={img_url}
+                  key={"img-" + counter}
+                  className="col"
+                />
+              );
+            })}
+          </Slider>
+        </div>
+      </div>
     );
   }
 }

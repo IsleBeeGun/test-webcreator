@@ -1,16 +1,34 @@
-.slick-prev:before {
-  color: #c9c9c9;
+.slick-prev {
+  width: auto;
+  height: auto;
+  content: url("/ui-elements/arrow-back.png");
 }
-.slick-prev:hover::before {
-  background: linear-gradient(91.82deg, #93E08C -1.93%, #78CEBF 97.03%);
+.slick-prev:hover {
+  background-color: red;
+}
+/* .slick-prev:before {
+  color: #c9c9c9;
+  content: url("/ui-elements/arrow-back.png");
+} */
+/* .slick-prev:hover::before {
+  background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+} */
+.slick-next {
+  width: auto;
+  height: auto;
+  content: url("/ui-elements/arrow-next.png");
 }
-.slick-next:before {
+.slick-next:hover {
+  background-color: green;
+}
+/* .slick-next:before {
   color: #c9c9c9;
-}
-.slick-next:hover::before {
-    background: linear-gradient(91.82deg, #93E08C -1.93%, #78CEBF 97.03%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  content: url("/ui-elements/arrow-next.png");
+} */
+/* .slick-next:hover::before {
+  background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
