@@ -23,13 +23,22 @@
 /* .slick-next:hover {
   background-color: green;
 } */
-.slick-next::before {
+/* .slick-next::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f007";
-}
+} */
 /* .slick-next:hover::before {
   background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
+.arrow-back, .arrow-next {
+  color: #c9c9c9;
+  font-size: 32px;
+}
+.arrow-back:hover, .arrow-next:hover {
+  background: linear-gradient(#9c47fc, #356ad2);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
