@@ -1,11 +1,9 @@
 import React from "react";
 import "./SliderComponent.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowAltCircleRight,
-  faArrowAltCircleLeft
-} from "@fortawesome/free-regular-svg-icons";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // function PrevArrow(props) {
 //   const { className, style, onClick } = props;
@@ -92,12 +90,17 @@ export class SliderComponent extends React.Component {
           </Slider>
           <div className="row">
             <div className="col">
-            <FontAwesomeIcon className="arrow-back bg-danger" icon={faArrowAltCircleLeft} onClick={this.back}/>
+              {/* <FontAwesomeIcon className="arrow-back bg-danger" icon={faArrowAltCircleLeft} onClick={this.back}/> */}
+              <div>
+              <i className="far fa-arrow-alt-circle-left arrow-back" onClick={this.back}></i>
+              </div>
             </div>
             <div className="col text-center"> o o o</div>
             <div className="col text-right">
-                {/* <FontAwesomeIcon className="arrow-next bg-success" icon={faArrowAltCircleRight} onClick={this.next}/> */}
-                <i className="bg-success far fa-arrow-alt-circle-right"></i>
+              {/* <FontAwesomeIcon className="arrow-next bg-success" icon={faArrowAltCircleRight} onClick={this.next}/> */}
+              <div>
+                <i className="far fa-arrow-alt-circle-right arrow-next" onClick={this.next}></i>
+              </div>
             </div>
           </div>
         </div>

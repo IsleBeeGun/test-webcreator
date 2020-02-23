@@ -38,7 +38,7 @@
   font-size: 32px;
 }
 .arrow-back:hover, .arrow-next:hover {
-  background: linear-gradient(#9c47fc, #356ad2);
+  background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
