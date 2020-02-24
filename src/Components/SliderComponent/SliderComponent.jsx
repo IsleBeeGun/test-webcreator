@@ -46,6 +46,16 @@ export class SliderComponent extends React.Component {
       slidesToScroll: this.props.slidesPerView,
       // nextArrow: <NextArrow />,
       // prevArrow: <PrevArrow />,
+      appendDots: dots => (
+        <div className="row">
+          <div className="col dots">
+            <ul> {dots} </ul>
+          </div>
+        </div>
+      ),
+      customPaging: () => (
+          <i className="fas fa-circle dot"></i>
+      ),
       responsive: [
         {
           breakpoint: 1200,
@@ -92,14 +102,20 @@ export class SliderComponent extends React.Component {
             <div className="col">
               {/* <FontAwesomeIcon className="arrow-back bg-danger" icon={faArrowAltCircleLeft} onClick={this.back}/> */}
               <div>
-              <i className="far fa-arrow-alt-circle-left arrow-back" onClick={this.back}></i>
+                <i
+                  className="far fa-arrow-alt-circle-left arrow-back"
+                  onClick={this.back}
+                ></i>
               </div>
             </div>
-            <div className="col text-center"> o o o</div>
+            <div className="col text-center" id="dots_overlay"></div>
             <div className="col text-right">
               {/* <FontAwesomeIcon className="arrow-next bg-success" icon={faArrowAltCircleRight} onClick={this.next}/> */}
               <div>
-                <i className="far fa-arrow-alt-circle-right arrow-next" onClick={this.next}></i>
+                <i
+                  className="far fa-arrow-alt-circle-right arrow-next"
+                  onClick={this.next}
+                ></i>
               </div>
             </div>
           </div>

@@ -33,12 +33,29 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
+
 .arrow-back, .arrow-next {
   color: #c9c9c9;
   font-size: 32px;
+  margin-top: 24px;
 }
-.arrow-back:hover, .arrow-next:hover {
+.arrow-back:hover, .arrow-next:hover, .arrow-back:active, .arrow-next:active {
   background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#dots_overlay {
+  z-index: -1;
+}
+.dots {
+  top: 24px;
+  background-color: transparent;
+}
+.dots ul {
+  margin: 0;
+  padding-inline-start: 0;
+}
+.dot {
+  color: #C9C9C9;
+  font-size: 12px;
 }

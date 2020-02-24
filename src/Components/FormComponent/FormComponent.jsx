@@ -19,7 +19,7 @@ export class FormComponent extends React.Component {
             <div className={this.props.field_groups.main}>
               <div className="row">
                 {main.map((field, index) => {
-                  if (field.type==="date") {
+                  if (field.type === "date") {
                     return (
                       <div
                         className="form-group col-md-6 input_group"
@@ -28,32 +28,37 @@ export class FormComponent extends React.Component {
                         <label htmlFor={index + "-" + field.name}>
                           {field.label}
                         </label>
-                        <input
-                          type={field.type}
-                          id={index + "-" + field.name}
-                          name={field.name}
-                          required={field.required}
-                          className="form-control input_field"
-                        />
+                        <div className="gradient-border-trick">
+                          <input
+                            type={field.type}
+                            id={index + "-" + field.name}
+                            name={field.name}
+                            required={field.required}
+                            className="form-control input_field_main"
+                          />
+                        </div>
                       </div>
                     );
-                  } else return (
-                    <div
-                      className="form-group col-md-6 input_group"
-                      key={index + "-" + field.name}
-                    >
-                      <label htmlFor={index + "-" + field.name}>
-                        {field.label}
-                      </label>
-                      <input
-                        type={field.type}
-                        id={index + "-" + field.name}
-                        name={field.name}
-                        required={field.required}
-                        className="form-control input_field"
-                      />
-                    </div>
-                  );
+                  } else
+                    return (
+                      <div
+                        className="form-group col-md-6 input_group"
+                        key={index + "-" + field.name}
+                      >
+                        <label htmlFor={index + "-" + field.name}>
+                          {field.label}
+                        </label>
+                        <div className="gradient-border-trick">
+                          <input
+                            type={field.type}
+                            id={index + "-" + field.name}
+                            name={field.name}
+                            required={field.required}
+                            className="form-control input_field_main"
+                          />
+                        </div>
+                      </div>
+                    );
                 })}
               </div>
             </div>
@@ -69,13 +74,16 @@ export class FormComponent extends React.Component {
                       <label htmlFor={index + "-" + field.name + "-textarea"}>
                         {field.label}
                       </label>
-                      <input
-                        type={field.type}
-                        id={index + "-" + field.name + "-textarea"}
-                        name={field.name}
-                        required={field.required}
-                        className="form-control input_field_additional"
-                      />
+                      <div className="gradient-border-trick">
+                        <textarea
+                          type={field.type}
+                          rows="3"
+                          id={index + "-" + field.name + "-textarea"}
+                          name={field.name}
+                          required={field.required}
+                          className="form-control input_field_additional"
+                        />
+                      </div>
                     </div>
                   );
                 })}
@@ -86,22 +94,22 @@ export class FormComponent extends React.Component {
           {gdpr.map((field, index) => {
             return (
               <div className="row" key={index + "-" + field.name}>
-                <div className="col-auto">
-                  <div className="custom-control custom-checkbox">
+                <div className="col gdpr">
+                  <div className="gradient-border-trick-checkbox">
                     <input
                       type={field.type}
                       name={field.name}
                       id={index + "-" + field.name}
                       required={true}
-                      className="custom-control-input gdpr_checkbox"
+                      className="gdpr_checkbox"
                     />
-                    <label
-                      htmlFor={index + "-" + field.name}
-                      className="custom-control-label gdpr_label"
-                    >
-                      {require("html-react-parser")(field.label)}
-                    </label>
                   </div>
+                  <label
+                    htmlFor={index + "-" + field.name}
+                    className="gdpr_label"
+                  >
+                    {require("html-react-parser")(field.label)}
+                  </label>
                 </div>
               </div>
             );
@@ -109,9 +117,9 @@ export class FormComponent extends React.Component {
 
           <div className="row">
             <div className="col">
-            <button type="submit" className="btn submit_button">
-              {this.props.submit_button.text}
-            </button>
+              <button type="submit" className="btn submit_button">
+                {this.props.submit_button.text}
+              </button>
             </div>
           </div>
         </div>
