@@ -5,26 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-// function PrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <button
-//       className={className}
-//       style={{ ...style, backgroundColor: "maroon" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-// function NextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <button
-//       className={className}
-//       style={{ ...style, backgroundColor: "green" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
 export class SliderComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -40,22 +20,12 @@ export class SliderComponent extends React.Component {
   render() {
     const settings = {
       dots: true,
+      dotsClass: "control-dots",
+      arrows: false,
       infinite: true,
       speed: 500,
       slidesToShow: this.props.slidesPerView,
       slidesToScroll: this.props.slidesPerView,
-      // nextArrow: <NextArrow />,
-      // prevArrow: <PrevArrow />,
-      appendDots: dots => (
-        <div className="row">
-          <div className="col dots">
-            <ul> {dots} </ul>
-          </div>
-        </div>
-      ),
-      customPaging: () => (
-          <i className="fas fa-circle dot"></i>
-      ),
       responsive: [
         {
           breakpoint: 1200,
@@ -99,8 +69,7 @@ export class SliderComponent extends React.Component {
             })}
           </Slider>
           <div className="row">
-            <div className="col">
-              {/* <FontAwesomeIcon className="arrow-back bg-danger" icon={faArrowAltCircleLeft} onClick={this.back}/> */}
+            <div className="col-auto">
               <div>
                 <i
                   className="far fa-arrow-alt-circle-left arrow-back"
@@ -109,8 +78,7 @@ export class SliderComponent extends React.Component {
               </div>
             </div>
             <div className="col text-center" id="dots_overlay"></div>
-            <div className="col text-right">
-              {/* <FontAwesomeIcon className="arrow-next bg-success" icon={faArrowAltCircleRight} onClick={this.next}/> */}
+            <div className="col-auto text-right">
               <div>
                 <i
                   className="far fa-arrow-alt-circle-right arrow-next"

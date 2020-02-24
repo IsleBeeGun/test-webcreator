@@ -1,45 +1,48 @@
-/* .slick-prev {
-  width: auto;
-  height: auto;
-  content: url("/ui-elements/arrow-back.png");
-} */
-/* .slick-prev:hover {
-  background-color: red;
-} */
-/* .slick-prev:before {
-  color: #c9c9c9;
-  content: url("/ui-elements/arrow-back.png");
-} */
-/* .slick-prev:hover::before {
-  background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-/* .slick-next {
-  width: auto;
-  height: auto;
-  content: url("/ui-elements/arrow-next.png");
-} */
-/* .slick-next:hover {
-  background-color: green;
-} */
-/* .slick-next::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f007";
-} */
-/* .slick-next:hover::before {
-  background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
+.control-dots {
+  position: relative;
+  min-width: 100%;
+  top: 57px;
+  padding: 0;
+  margin: 0;
+  border-radius: 40px;
+  text-align: center;
+}
 
-.arrow-back, .arrow-next {
+.control-dots li {
+  list-style: none;
+  display: inline;
+  cursor: pointer;
+  margin: 0 12px;
+  padding: 0;
+}
+
+.control-dots li button {
+  border: none;
+  background: #C9C9C9;
+  color: transparent;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+}
+
+.control-dots li.slick-active button,
+.control-dots li button:hover,
+.control-dots li button:focus {
+  background: linear-gradient(91.83deg, #93E08C -1.93%, #78CEBF 97.03%);
+  outline: 0;
+}
+
+.arrow-back,
+.arrow-next {
   color: #c9c9c9;
   font-size: 32px;
   margin-top: 24px;
 }
-.arrow-back:hover, .arrow-next:hover, .arrow-back:active, .arrow-next:active {
+.arrow-back:hover,
+.arrow-next:hover,
+.arrow-back:active,
+.arrow-next:active {
   background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -55,7 +58,10 @@
   margin: 0;
   padding-inline-start: 0;
 }
+.dots ul li {
+  margin: 0 12px;
+}
 .dot {
-  color: #C9C9C9;
+  color: #c9c9c9;
   font-size: 12px;
 }
