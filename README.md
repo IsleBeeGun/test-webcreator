@@ -7,6 +7,7 @@ Figma mockup can be found [here](https://www.figma.com/proto/AXguKXKZgW7JGalk1jW
 Initial page structure from json file is [here](https://gist.github.com/alexandrov-va/7f353ca822d074d7ce22d3af3d13696f).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 Dependencies:
 
 "@fortawesome/fontawesome-free": "^5.12.1"
