@@ -1,4 +1,25 @@
+## About this project
+
+This is a test project for [Web Creator](https://web-creator.ru/) company.
+Figma mockup can be found [here](https://www.figma.com/proto/AXguKXKZgW7JGalk1jWoQj/Test?node-id=1%3A2&viewport=307%2C406%2C0.6006993055343628&scaling=min-zoom).
+Initial page structure from json file is [here](https://gist.github.com/alexandrov-va/7f353ca822d074d7ce22d3af3d13696f).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dependencies:
+
+"@fortawesome/fontawesome-free": "^5.12.1",
+"@testing-library/jest-dom": "^4.2.4",
+"@testing-library/react": "^9.4.0",
+"@testing-library/user-event": "^7.2.1",
+"bootstrap": "^4.4.1",
+"html-react-parser": "^0.10.1",
+"moment": "^2.24.0",
+"react": "^16.12.0",
+"react-datetime": "^2.16.3",
+"react-dom": "^16.12.0",
+"react-scripts": "3.4.0",
+"react-slick": "^0.25.2",
+"slick-carousel": "^1.8.1"
 
 ## Available Scripts
 
@@ -42,27 +63,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
