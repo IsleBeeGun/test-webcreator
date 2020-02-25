@@ -41,9 +41,6 @@ label {
   line-height: 140%;
 }
 
-/* .input_field_date::after {
-  content: "sssss";
-} */
 .date_icon {
   position: absolute;
   bottom: 12px;
