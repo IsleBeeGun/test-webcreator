@@ -1,24 +1,38 @@
 ## About this project
 
 This is a test project for [Web Creator](https://web-creator.ru/) company.
+
 Figma mockup can be found [here](https://www.figma.com/proto/AXguKXKZgW7JGalk1jWoQj/Test?node-id=1%3A2&viewport=307%2C406%2C0.6006993055343628&scaling=min-zoom).
+
 Initial page structure from json file is [here](https://gist.github.com/alexandrov-va/7f353ca822d074d7ce22d3af3d13696f).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Dependencies:
 
-"@fortawesome/fontawesome-free": "^5.12.1",
-"@testing-library/jest-dom": "^4.2.4",
-"@testing-library/react": "^9.4.0",
-"@testing-library/user-event": "^7.2.1",
-"bootstrap": "^4.4.1",
-"html-react-parser": "^0.10.1",
-"moment": "^2.24.0",
-"react": "^16.12.0",
-"react-datetime": "^2.16.3",
-"react-dom": "^16.12.0",
-"react-scripts": "3.4.0",
-"react-slick": "^0.25.2",
+"@fortawesome/fontawesome-free": "^5.12.1"
+
+"@testing-library/jest-dom": "^4.2.4"
+
+"@testing-library/react": "^9.4.0"
+
+"@testing-library/user-event": "^7.2.1"
+
+"bootstrap": "^4.4.1"
+
+"html-react-parser": "^0.10.1"
+
+"moment": "^2.24.0"
+
+"react": "^16.12.0"
+
+"react-datetime": "^2.16.3"
+
+"react-dom": "^16.12.0"
+
+"react-scripts": "3.4.0"
+
+"react-slick": "^0.25.2"
+
 "slick-carousel": "^1.8.1"
 
 ## Available Scripts
