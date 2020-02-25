@@ -117,7 +117,7 @@ export class FormComponent extends React.Component {
                           type={field.type}
                           rows="3"
                           id={index + "-" + field.name + "-textarea"}
-                          name={field.name}
+                          name={index + "-" + field.name + "-textarea"}
                           required={field.required}
                           className="form-control input_field_additional"
                         />
