@@ -11,7 +11,7 @@ export class App extends React.Component {
         <header className="container-fluid main_header">
           <div className="container">
             <div className="row">
-              <span className="col-auto">Тестовое задание</span>
+              <span className="col-auto pl-0">Тестовое задание</span>
             </div>
           </div>
         </header>

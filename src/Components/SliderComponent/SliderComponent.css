@@ -1,7 +1,7 @@
 .control-dots {
   position: relative;
   min-width: 100%;
-  top: 57px;
+  top: 58px;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -18,7 +18,7 @@
 .control-dots li button {
   border: none;
   padding: 0px;
-  background: #C9C9C9;
+  background: #c9c9c9;
   color: transparent;
   cursor: pointer;
   height: 12px;
@@ -26,11 +26,14 @@
   border-radius: 50%;
 }
 
-.control-dots li.slick-active button,
-.control-dots li button:hover,
-.control-dots li button:focus {
-  background: linear-gradient(91.83deg, #93E08C -1.93%, #78CEBF 97.03%);
+.control-dots li.slick-active button {
+  background: linear-gradient(91.83deg, #93e08c -1.93%, #78cebf 97.03%);
   outline: 0;
+}
+
+.control-dots li button:focus,
+.control-dots li button:hover {
+  outline: 0px !important;
 }
 
 .arrow-back,
@@ -46,6 +49,13 @@
   background: linear-gradient(91.82deg, #93e08c -1.93%, #78cebf 97.03%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+/* Hiding arrows on mobile screen */
+@media screen and (max-width: 768px) {
+  .arrow-back,
+  .arrow-next {
+    visibility: hidden;
+  }
 }
 #dots_overlay {
   z-index: -1;

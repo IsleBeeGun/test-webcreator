@@ -6,7 +6,7 @@ export class GalleryComponent extends React.Component {
   render() {
     return (
       <section className="row">
-        <div className="col">
+        <div className="pl-md-0 col">
           <div className="row">
             <div className="col gallery_title">{this.props.metadata.title}</div>
           </div>

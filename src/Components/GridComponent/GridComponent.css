@@ -1,0 +1,5 @@
+@media screen and (min-width: 769px) {
+    .grid_component article:nth-child(2n){
+        padding-left: 50px;
+    }
+}
